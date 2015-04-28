@@ -1,7 +1,9 @@
-testx sample project
+Web ART base project
 ====================
 
-A library for executing MS Excel based, keyword driven tests with Protractor. It is possible to use it without MS Excel as well, but Excel provides a very powerful computational platform, that makes everything a lot easier. Of course if you don't want to shell out for MS Excel you can use any of the numerous copies like LibreOffice (OpenOffice) Calc, etc.
+This project is meant to serve as a starting point for MS Excel based, keyword driven tests with Protractor.
+It is possible to use it without MS Excel as well, but Excel provides a very powerful computational platform, that makes everything a lot easier.
+Of course if you don't want to shell out for MS Excel you can use any of the numerous copies like LibreOffice (OpenOffice) Calc, etc.
 
 ## Prerequisites
 
@@ -18,11 +20,11 @@ Update and start local selenium server using webdriver-manager (comes with protr
 
 ## Installation
 
-Create a protractor project.
+Clone this project.
 
-Add this module to your project
+Install all dependencies. In the project directory do:
 
-	npm install testx --save
+	npm install
 
 ## Run
 
