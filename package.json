@@ -9,6 +9,6 @@
   "author": "Gantcho Kojuharov <gantcho@greyarch.net> (http://greyarch.net)",
   "license": "ISC",
   "dependencies": {
-    "testx": "^0.1.5"
+    "testx": "^0.1.6"
   }
 }
