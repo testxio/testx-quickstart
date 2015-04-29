@@ -20,6 +20,13 @@ exports.config =
   params:
     testx:
       xls2testUrl: 'http://docker1.rni.org:4567'
+      appName: '[APP_NAME]'
+      appVersion: '[APP_VERSION]'
+      testDesc: '[TEST_DESCRIPTION]'
+      testUser: '[TEST_USER]'
+      testVersion: '[TEST_VERSION]'
+      testTarget: '[TEST_TARGET]'
+      testPlatform: '[TEST_PLATFORM]'
       reportServiceUrl: 'http://testwiki.lrk.org:4567/upload'
 
   onPrepare: ->
