@@ -13,9 +13,12 @@ Install protractor (may need to run as root/administrator):
 
 	npm install -g protractor
 
-Update and start local selenium server using webdriver-manager (comes with protractor):
+Update the local chrome and firefox selenium drivers using webdriver-manager (comes with protractor):
 
 	webdriver-manager update
+
+Optionally, start local selenium server (if you do that you do not need the --directConnect=true option when you start protractor)
+
 	webdriver-manager start
 
 ## Installation
@@ -30,17 +33,4 @@ Install all dependencies. In the project directory do:
 
 From within the project directory:
 
-	protractor conf.coffee --baseUrl=http://google.com
-	
-## Run tests from a docker container with protractor
-
-If for some reason you cannot install node and protractor you can also run your tests in a docker container with protractor installed.
-This is the ideal way to execute tests from jenkins.
-
-Requirement -> the current directory should contain the source files from this project
-
-From the shell do:
-    
-    docker run --rm -v $(pwd):/tests docker-registry.isd.ictu:5000/protractor:[version] [param1 param2 param3 ...]
-    
-You can pass any of the parameters available from the protractor binary.
+	protractor conf.coffee --directConnect=true

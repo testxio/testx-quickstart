@@ -15,11 +15,12 @@ exports.config =
     silent: true
     defaultTimeoutInterval: 300000
 
+  baseUrl: 'http://google.com'
   rootElement: 'html' # change to the root element of the angular.js app
 
   params:
     testx:
-      xls2testUrl: 'http://docker1.rni.org:4567'
+      xls2testUrl: 'http://localhost:4567'
       appName: '[APP_NAME]'
       appVersion: '[APP_VERSION]'
       testDesc: '[TEST_DESCRIPTION]'
@@ -28,10 +29,12 @@ exports.config =
       testTarget: '[TEST_TARGET]'
       testPlatform: '[TEST_PLATFORM]'
       reportServiceUrl: 'http://testwiki.lrk.org:4567/upload'
+      actionTimeout: 4000
 
   onPrepare: ->
     testx.onPrepare()
-    testx.addObjects(require './objects')
+    # testx.addObjects(require './objects')
+    testx.addObjects 'objects/objects.csv'
     testx.addKeywords(require './keywords')
 
     # comment next line for angular.js apps

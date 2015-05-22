@@ -1,4 +1,3 @@
-testx = require 'testx'
 _ = require 'lodash'
 
 module.exports = ->
