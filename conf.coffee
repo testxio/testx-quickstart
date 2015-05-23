@@ -11,6 +11,8 @@ exports.config =
     # chromeOptions:
     #   args: ['user-agent=Mozilla/5.0 (iPhone 8.0)']
 
+  directConnect: true
+
   jasmineNodeOpts:
     silent: true
     defaultTimeoutInterval: 300000
@@ -20,7 +22,7 @@ exports.config =
 
   params:
     testx:
-      xls2testUrl: 'http://localhost:4567'
+      xls2testUrl: 'http://xls.testx.io'
       appName: '[APP_NAME]'
       appVersion: '[APP_VERSION]'
       testDesc: '[TEST_DESCRIPTION]'
