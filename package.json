@@ -1,15 +1,12 @@
 {
   "name": "test",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.coffee",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Gantcho Kojuharov <gantcho@greyarch.net> (http://greyarch.net)",
   "license": "ISC",
   "dependencies": {
     "lodash": "^3.7.0",
-    "testx": "^0.3.4"
+    "testx": "^0.4.0"
   }
 }

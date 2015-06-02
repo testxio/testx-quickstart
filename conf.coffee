@@ -11,7 +11,7 @@ exports.config =
     # chromeOptions:
     #   args: ['user-agent=Mozilla/5.0 (iPhone 8.0)']
 
-  directConnect: true
+  # directConnect: true
 
   jasmineNodeOpts:
     silent: true
