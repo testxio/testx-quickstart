@@ -13,6 +13,7 @@ exports.config =
 
   directConnect: true
 
+  framework: 'jasmine2'
   jasmineNodeOpts:
     silent: true
     defaultTimeoutInterval: 300000
