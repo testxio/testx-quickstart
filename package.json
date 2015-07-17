@@ -6,7 +6,10 @@
   "author": "Gantcho Kojuharov <gantcho@greyarch.net> (http://greyarch.net)",
   "license": "ISC",
   "dependencies": {
+    "excel-parser": "^0.2.2",
     "lodash": "^3.7.0",
-    "testx": "^0.4.0"
+    "testx": "^0.6.0",
+    "xlsx": "^0.8.0",
+    "xlsx-rows": "^1.0.0"
   }
 }

@@ -11,19 +11,21 @@ exports.config =
     # chromeOptions:
     #   args: ['user-agent=Mozilla/5.0 (iPhone 8.0)']
 
-  # directConnect: true
+  directConnect: true
 
   framework: 'jasmine2'
   jasmineNodeOpts:
     silent: true
     defaultTimeoutInterval: 300000
+    includeStackTrace: false
 
   baseUrl: 'http://google.com'
   rootElement: 'html' # change to the root element of the angular.js app
 
   params:
     testx:
-      xls2testUrl: 'http://xls.testx.io'
+      logScript: true
+      # xls2testUrl: 'http://xls.testx.io'
       appName: '[APP_NAME]'
       appVersion: '[APP_VERSION]'
       testDesc: '[TEST_DESCRIPTION]'
