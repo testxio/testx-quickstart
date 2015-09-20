@@ -8,7 +8,9 @@
   "dependencies": {
     "excel-parser": "^0.2.2",
     "lodash": "^3.7.0",
-    "testx": "^0.6.0",
+    "testx": "^1.0.0",
+    "testx-ictu-reporter": "^0.2.0",
+    "testx-pdf-keywords": "^0.2.0",
     "xlsx": "^0.8.0",
     "xlsx-rows": "^1.0.0"
   }

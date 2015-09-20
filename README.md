@@ -33,4 +33,4 @@ Install all dependencies. In the project directory do:
 
 From within the project directory:
 
-	protractor conf.coffee --directConnect=true
+	protractor conf.coffee
