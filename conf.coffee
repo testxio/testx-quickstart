@@ -1,5 +1,5 @@
 testx = require 'testx'
-reporter = require 'testx-ictu-reporter'
+reporters = require 'testx-jasmine-reporters'
 
 exports.config =
   directConnect: true
@@ -33,7 +33,7 @@ exports.config =
     testx.keywords.add(require './keywords')
     testx.keywords.add(require 'testx-pdf-keywords')
 
-    reporter.addJasmineReporters()
+    reporters()
 
     # comment next line for angular.js apps
     beforeEach -> browser.ignoreSynchronization = true
