@@ -7,7 +7,7 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^3.7.0",
-    "testx": "^1.5.1",
+    "testx": "^1.5.2",
     "testx-jasmine-reporters": "^1.0.0",
     "testx-pdf-keywords": "^0.3.0"
   }
