@@ -34,3 +34,11 @@ Install all dependencies. In the project directory do:
 From within the project directory:
 
 	protractor conf.coffee
+
+### With Docker
+
+  docker run --rm -it -v $(pwd):/work testx/protractor
+
+## API
+
+Check the [testx documentation](https://github.com/testxio/testx) for details.
