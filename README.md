@@ -7,9 +7,9 @@ Of course if you don't want to shell out for MS Excel you can use any of the num
 
 ## Prerequisites
 
-Make sure you have Node.js, npm (it comes with node) and coffee-script installed on your machine. To run selenium server locally (not really necessary for dev/testing) you'll need java as well.
+Make sure you have [Node.js](https://nodejs.org), npm (it comes with node) and [CoffeeScript](http://coffeescript.org/) installed on your machine. To run selenium server locally (not really necessary for dev/testing) you'll need java as well.
 
-Install protractor (may need to run as root/administrator):
+Install [protractor](http://www.protractortest.org/) (may need to run as root/administrator):
 
 	npm install -g protractor
 
