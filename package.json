@@ -12,6 +12,7 @@
     "testx-pdf-keywords": "^0.3.0"
   },
   "scripts": {
-    "test": "protractor conf.coffee"
+    "test": "protractor conf.coffee",
+    "test-docker": "docker run --rm -it -v `pwd`:/work --net=host testx/protractor conf.coffee"
   }
 }

@@ -9,8 +9,8 @@ exports.config =
     browserName: 'chrome'
     shardTestFiles: false
     maxInstances: 2
-    # chromeOptions:
-    #   args: ['user-agent=Mozilla/5.0 (iPhone 8.0)']
+    chromeOptions:
+      args: ['no-sandbox']
 
 
   framework: 'jasmine'
