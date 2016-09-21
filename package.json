@@ -9,7 +9,8 @@
     "lodash": "^3.7.0",
     "testx": "^1.11.0",
     "testx-jasmine-reporters": "^1.1.1",
-    "testx-pdf-keywords": "^0.3.0"
+    "testx-pdf-keywords": "^0.3.0",
+    "testx-yaml-parser": "^0.1.0"
   },
   "scripts": {
     "test": "protractor conf.coffee",
