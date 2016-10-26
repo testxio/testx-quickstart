@@ -1,9 +1,0 @@
-go to:
-  url: /
-set:
-  searchBox: sample pdf files
-  searchBtn: ''
-check in pdf:
-  link: pdfLink
-  expect1: D e n t i s t s
-  expect2: P o l i t i c i a n s

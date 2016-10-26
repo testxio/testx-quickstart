@@ -1,4 +1,4 @@
-testx = require 'testx'
+require 'testx'
 reporters = require 'testx-jasmine-reporters'
 
 exports.config =
@@ -24,7 +24,7 @@ exports.config =
 
   params:
     testx:
-      logScript: true
+      logScript: false
       actionTimeout: 4000
 
   onPrepare: ->
@@ -33,7 +33,7 @@ exports.config =
     testx.keywords.add(require './keywords')
     testx.keywords.add(require 'testx-pdf-keywords')
 
-    # reporters()
+    reporters()
 
     # comment next line for angular.js apps
     beforeEach -> browser.ignoreSynchronization = true
