@@ -1,4 +1,3 @@
-require 'testx'
 reporters = require 'testx-jasmine-reporters'
 
 exports.config =
@@ -8,7 +7,8 @@ exports.config =
   capabilities:
     browserName: 'chrome'
     shardTestFiles: false
-    maxInstances: 2
+    count: 1
+    maxInstances: 10
     chromeOptions:
       args: ['no-sandbox']
 
@@ -28,7 +28,7 @@ exports.config =
       actionTimeout: 4000
 
   onPrepare: ->
-    # testx.addObjects(require './objects')
+    testx = require 'testx'
     testx.objects.add 'objects/objects.csv'
     testx.keywords.add(require './keywords')
     testx.keywords.add(require 'testx-pdf-keywords')

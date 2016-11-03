@@ -1,7 +1,7 @@
 Web ART base project
 ====================
 
-This project is meant to serve as a starting point for MS Excel based, keyword driven tests with Protractor.
+This project is meant to serve as a starting point for keyword driven tests with [testx](http://testx.io/testx).
 It is possible to use it without MS Excel as well, but Excel provides a very powerful computational platform, that makes everything a lot easier.
 Of course if you don't want to shell out for MS Excel you can use any of the numerous copies like LibreOffice (OpenOffice) Calc, etc.
 
@@ -41,4 +41,4 @@ From within the project directory:
 
 ## API
 
-Check the [testx documentation](https://github.com/testxio/testx) for details.
+Check the [testx documentation](http://testx.io/testx) for details.
