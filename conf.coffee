@@ -30,6 +30,7 @@ exports.config =
   onPrepare: ->
     testx = require 'testx'
     testx.objects.add 'objects/objects.csv'
+    testx.objects.add require 'testx-standard-objects'
     testx.keywords.add(require './keywords')
     testx.keywords.add(require 'testx-pdf-keywords')
 
