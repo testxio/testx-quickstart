@@ -3,7 +3,7 @@
 
 # fill in the search box and press search
 - set:
-    name('q') : sample pdf files
+    name('q'): sample pdf files
     searchBtn: ''
 
 # check the content of the pdf file

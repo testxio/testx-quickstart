@@ -7,10 +7,10 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.16.4",
-    "testx": "^2.1.1",
+    "testx": "^2.2.1",
     "testx-jasmine-reporters": "^1.1.1",
     "testx-pdf-keywords": "^0.3.0",
-    "testx-standard-objects": "^0.1.0"
+    "testx-standard-objects": "^0.1.1"
   },
   "scripts": {
     "test": "docker run --rm -it -u `id -u`:`id -g` -v `pwd`:/work --net=host testx/protractor conf.coffee",
