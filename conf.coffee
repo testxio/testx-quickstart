@@ -22,11 +22,6 @@ exports.config =
   baseUrl: 'http://google.com'
   rootElement: 'html' # change to the root element of the angular.js app
 
-  params:
-    testx:
-      logScript: false
-      actionTimeout: 4000
-
   onPrepare: ->
     testx = require 'testx'
     testx.objects.add 'objects/objects.csv'
