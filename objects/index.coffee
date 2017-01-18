@@ -1,12 +1,9 @@
 _ = require 'lodash'
 
-module.exports = ->
-  _.assign objects, (require './page_1')
-  _.assign objects, (require './page_2')
-
-objects =
-  #sample objects (google.com)
-
-  "resultLink":
+module.exports =
+  resultLink:
+    locator: "linkText"
+    value: "testxio · GitHub"
+  searchBtn:
     locator: "css"
-    value: "li.g a"
+    value: "button[name='btnG']"

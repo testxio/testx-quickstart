@@ -1,5 +1,0 @@
-resultLink,css,li.g a
-searchBox,css,input[name='q']
-searchBtn,css,button[name='btnG']
-luckyBtn,css,button[name='btnI']
-pdfLink,css,div.rc a

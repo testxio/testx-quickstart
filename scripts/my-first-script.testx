@@ -1,0 +1,27 @@
+# go to the url of the page under test
+# it is relative to the base url (http://google.com)
+# in this example it is defined in the conf.coffee file
+# check protractor docs to see what other ways are there to specify it
+- go to:
+    url: /
+
+# type 'testx.io' in the google search box
+# and press enter
+# name('q') object reference uses the standard objects from the testx-standard-objects package
+# the searchBtn object is defined in objects/index.coffe
+- set:
+    name('q'): testx.io
+    searchBtn:
+
+# check that the expected result appears on the screen
+# the resultLink object is defined in objects/index.coffe
+- wait to appear:
+    el1: resultLink
+
+# use your custom keyword
+# the implementation of the keyword below is in keywords/index.coffee
+# to use custom keywords you need to first tell testx about them
+# look into the conf.coffee file for an example
+- my keyword:
+    exp: 1
+    act: 1
