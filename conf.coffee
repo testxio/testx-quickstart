@@ -22,7 +22,7 @@ exports.config =
   baseUrl: 'http://google.com'
 
   onPrepare: ->
-    testx = require 'testx'
+    require 'testx'
     testx.objects.add require './objects'
     testx.objects.add require 'testx-standard-objects'
     testx.keywords.add(require './keywords')
