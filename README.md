@@ -5,7 +5,7 @@ This project is meant to serve as a starting point for keyword driven tests with
 
 ## Prerequisites
 
-Make sure you have [Node.js](https://nodejs.org), npm (it comes with node) installed on your machine. To run selenium server locally (not really necessary for dev/testing) you'll need java as well.
+Make sure you have [Node.js](https://nodejs.org) installed on your machine. To run selenium server locally (not really necessary for dev/testing) you'll need java as well.
 
 Install [protractor](http://www.protractortest.org/) (may need to run as root/administrator):
 
