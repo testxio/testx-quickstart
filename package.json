@@ -12,11 +12,21 @@
     "testx-standard-objects": "^0.1.1"
   },
   "scripts": {
-    "test": "docker run --rm -it -u `id -u`:`id -g` -v `pwd`:/work --net=host testx/protractor conf.coffee",
-    "test-local": "protractor conf.coffee"
+    "docker": "docker run --rm -it -u \"$(id -u):$(id -g)\" -v \"$(pwd):/work\" --net=host testx/chrome",
+
+    "pretest": "node_modules/.bin/webdriver-manager update",
+    "test": "protractor conf.coffee",
+
+    "preforeground": "sed -i \"s/\\['--headless', /\\[/\" conf.coffee",
+    "foreground": "npm run test",
+    "postforeground": "sed -i \"s/args: \\[/args: \\['--headless', /\" conf.coffee"
+
   },
   "testx": {
     "logScript": false,
     "actionTimeout": 5000
+  },
+  "devDependencies": {
+    "protractor": "^5.3.2"
   }
 }
