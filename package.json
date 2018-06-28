@@ -14,7 +14,7 @@
   "scripts": {
     "docker": "docker run --rm -it -u \"$(id -u):$(id -g)\" -v \"$(pwd):/work\" --net=host testx/chrome",
 
-    "pretest": "node_modules/.bin/webdriver-manager update",
+    "pretest": "webdriver-manager update",
     "test": "protractor conf.coffee",
 
     "preforeground": "sed -i \"s/\\['--headless', /\\[/\" conf.coffee",
