@@ -12,14 +12,14 @@
     "testx-standard-objects": "^0.1.1"
   },
   "scripts": {
+
     "docker": "docker run --rm -it -u \"$(id -u):$(id -g)\" -v \"$(pwd):/work\" --net=host testx/chrome",
+
 
     "pretest": "webdriver-manager update",
     "test": "protractor conf.coffee",
 
-    "preforeground": "sed -i \"s/\\['--headless', /\\[/\" conf.coffee",
-    "foreground": "npm run test",
-    "postforeground": "sed -i \"s/args: \\[/args: \\['--headless', /\" conf.coffee"
+    "displayed": "npm run test -- --capabilities.chromeOptions.args="
 
   },
   "testx": {
