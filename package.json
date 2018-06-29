@@ -6,10 +6,10 @@
   "author": "Gantcho Kojuharov <gantcho@greyarch.net> (http://greyarch.net)",
   "license": "ISC",
   "dependencies": {
+    "@testx/objects-standard": "^1.0.1",
+    "@testx/reporters-jasmine": "^2.0.0",
     "lodash": "^4.16.4",
-    "testx": "^2.6.0",
-    "testx-jasmine-reporters": "^1.1.1",
-    "testx-standard-objects": "^0.1.1"
+    "testx": "^2.11.0"
   },
   "scripts": {
     "test": "docker run --rm -it -u `id -u`:`id -g` -v `pwd`:/work --net=host testx/protractor conf.coffee",

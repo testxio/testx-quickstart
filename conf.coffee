@@ -1,4 +1,4 @@
-reporters = require 'testx-jasmine-reporters'
+reporters = require '@testx/reporters-jasmine'
 
 exports.config =
   directConnect: true
@@ -24,7 +24,7 @@ exports.config =
   onPrepare: ->
     require 'testx'
     testx.objects.add require './objects'
-    testx.objects.add require 'testx-standard-objects'
+    testx.objects.add require '@testx/objects-standard'
     testx.keywords.add(require './keywords')
 
     reporters()
