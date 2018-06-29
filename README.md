@@ -7,14 +7,6 @@ This project is meant to serve as a starting point for keyword driven tests with
 
 Make sure you have [Node.js](https://nodejs.org) installed on your machine. To run selenium server locally (not really necessary for dev/testing) you'll need java as well.
 
-Install [protractor](http://www.protractortest.org/) (may need to run as root/administrator):
-
-	npm install -g protractor
-
-Update the local chrome and firefox selenium drivers using webdriver-manager (comes with protractor):
-
-	webdriver-manager update
-
 ## Installation
 
 Clone this project.
@@ -31,13 +23,17 @@ From within the project directory:
 
 or
 
-	npm run test-local
+	npm test
+
+This run uses Chrome headless mode. If you want to see what is going on, do:
+
+	npm run test:display
 
 ### Run with [Docker](https://www.docker.com/)
 
 This method is recommended when executing your tests as part of a continuous integration pipeline. When using Docker you do not need protractor installed on your machine (or the CI server), but of course you need Docker.
 
-  	npm test
+  	npm run test:docker
 
 ## Next steps
 
