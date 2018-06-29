@@ -1,6 +1,6 @@
 {
   "name": "testx-quickstart",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Seed testx project.",
   "main": "index.coffee",
   "author": "Gantcho Kojuharov <gantcho@greyarch.net> (http://greyarch.net)",
@@ -14,10 +14,8 @@
   "scripts": {
     "pretest": "webdriver-manager update",
     "test": "protractor conf.coffee",
-
-    "displayed": "npm run test -- --capabilities.chromeOptions.args=",
-
-    "docker": "docker run --rm -it -u \"$(id -u):$(id -g)\" -v \"$(pwd):/work\" --net=host testx/chrome"
+    "test:display": "npm run test -- --capabilities.chromeOptions.args=[]",
+    "test:docker": "docker run --rm -it -u \"$(id -u):$(id -g)\" -v \"$(pwd):/work\" --net=host testx/chrome"
   },
   "testx": {
     "logScript": false,
