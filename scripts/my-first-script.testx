@@ -7,11 +7,9 @@
 
 # type 'testx.io' in the google search box
 # and press enter
-# name('q') object reference uses the standard objects from the testx-standard-objects package
-# the searchBtn object is defined in objects/index.coffe
+# name('q') object reference uses the standard objects from the @testx/objects-standard package
 - set:
-    name('q'): testx.io
-    searchBtn:
+    name('q'): "testx.io\n"
 
 # check that the expected result appears on the screen
 # the resultLink object is defined in objects/index.coffe
