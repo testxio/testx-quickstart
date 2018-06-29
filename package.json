@@ -12,15 +12,12 @@
     "testx-standard-objects": "^0.1.1"
   },
   "scripts": {
-
-    "docker": "docker run --rm -it -u \"$(id -u):$(id -g)\" -v \"$(pwd):/work\" --net=host testx/chrome",
-
-
     "pretest": "webdriver-manager update",
     "test": "protractor conf.coffee",
 
-    "displayed": "npm run test -- --capabilities.chromeOptions.args="
+    "displayed": "npm run test -- --capabilities.chromeOptions.args=",
 
+    "docker": "docker run --rm -it -u \"$(id -u):$(id -g)\" -v \"$(pwd):/work\" --net=host testx/chrome"
   },
   "testx": {
     "logScript": false,
