@@ -10,7 +10,7 @@ exports.config =
     count: 1
     maxInstances: 10
     chromeOptions:
-      args: ['no-sandbox']
+      args: ['--headless', '--no-sandbox', '--window-size=1024,800', '--disable-gpu']
 
 
   framework: 'jasmine'

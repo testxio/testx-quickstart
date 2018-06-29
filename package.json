@@ -12,11 +12,18 @@
     "testx": "^2.11.0"
   },
   "scripts": {
-    "test": "docker run --rm -it -u `id -u`:`id -g` -v `pwd`:/work --net=host testx/protractor conf.coffee",
-    "test-local": "protractor conf.coffee"
+    "pretest": "webdriver-manager update",
+    "test": "protractor conf.coffee",
+
+    "displayed": "npm run test -- --capabilities.chromeOptions.args=",
+
+    "docker": "docker run --rm -it -u \"$(id -u):$(id -g)\" -v \"$(pwd):/work\" --net=host testx/chrome"
   },
   "testx": {
     "logScript": false,
     "actionTimeout": 5000
+  },
+  "devDependencies": {
+    "protractor": "^5.3.2"
   }
 }
